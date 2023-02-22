@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///./src/editor.scss"],"names":[],"mappings":"AACC;EACC;AAAF,C","file":"index.css","sourcesContent":[".wp-block-blocks-course-text-box {\r\n\t.text-box-title {\r\n\t\tmargin: 0;\r\n\t}\r\n}\r\n"],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./src/editor.scss"],"names":[],"mappings":"AAEC;EACC;AADF,C","file":"index.css","sourcesContent":[".wp-block-blocks-course-text-box {\r\n\r\n\t.text-box-title {\r\n\t\tmargin: 0;\r\n\t}\r\n}\r\n"],"sourceRoot":""}
