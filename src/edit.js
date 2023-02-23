@@ -12,10 +12,10 @@ import './editor.scss';
 
 export default function Edit( props ) {
 	const { attributes, setAttributes } = props;
-	const { text, alignment, shadow, shadowOpacity } = attributes;
+	const { text, textAlignment, shadow, shadowOpacity } = attributes;
 
 	const onChangeAlignment = ( newAlignment ) => {
-		setAttributes( { alignment: newAlignment } );
+		setAttributes( { textAlignment: newAlignment } );
 	};
 	const onChangeText = ( newText ) => {
 		setAttributes( { text: newText } );
@@ -27,7 +27,7 @@ export default function Edit( props ) {
 		setAttributes( { shadow: ! shadow } );
 	};
 
-	const classes = classnames( `text-box-align-${ alignment }`, {
+	const classes = classnames( `text-box-align-${ textAlignment }`, {
 		'has-shadow': shadow,
 		[ `shadow-opacity-${ shadowOpacity }` ]: shadow && shadowOpacity,
 	} );
@@ -59,7 +59,7 @@ export default function Edit( props ) {
 				] }
 			>
 				<AlignmentToolbar
-					value={ alignment }
+					value={ textAlignment }
 					onChange={ onChangeAlignment }
 				/>
 			</BlockControls>
@@ -73,7 +73,7 @@ export default function Edit( props ) {
 					onChange={ onChangeText }
 					value={ text }
 					placeholder={ __( 'Your Text', 'text-box' ) }
-					tagName="h4"
+					tagName="p"
 					allowedFormats={ [] }
 				/>
 			</div>
